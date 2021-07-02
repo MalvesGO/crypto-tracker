@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/Link";
+import Image from "next/image";
+import Logo from "../public/bitcoin.png";
 
 const Layout = ({ children, title = "Crypto Tracker" }) => {
   return (
@@ -12,11 +14,7 @@ const Layout = ({ children, title = "Crypto Tracker" }) => {
       <header className="header">
         <Link href="/" passHref>
           <a>
-            <img
-              className="coin_logo"
-              src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
-              alt=""
-            />
+            <Image className="coin_logo" src={Logo} alt="" />
           </a>
         </Link>
       </header>
