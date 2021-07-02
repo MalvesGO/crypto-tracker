@@ -1,5 +1,6 @@
 import styles from "./Coins.module.css";
 import Link from "next/Link";
+import Image from "next/image";
 
 const Coins = ({
   name,
@@ -16,7 +17,13 @@ const Coins = ({
       <div className={styles.coin_container}>
         <div className={styles.coin_row}>
           <div className={styles.coin}>
-            <img src={image} alt="" className={styles.coin_image} />
+            <Image
+              width="50px"
+              height="50px"
+              src={image}
+              alt=""
+              className={styles.coin_image}
+            />
             <h1 className={styles.coin_title}>{name}</h1>
             <p className={styles.coin_symbol}>{symbol}</p>
           </div>

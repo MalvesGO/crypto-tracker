@@ -14,7 +14,13 @@ const Layout = ({ children, title = "Crypto Tracker" }) => {
       <header className="header">
         <Link href="/" passHref>
           <a>
-            <Image className="coin_logo" src={Logo} alt="" />
+            <Image
+              className="coin_logo"
+              width="100px"
+              height="100px"
+              src={Logo}
+              alt=""
+            />
           </a>
         </Link>
       </header>
